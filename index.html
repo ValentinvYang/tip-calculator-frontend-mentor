@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Spli<br />tter</h1>
+    </header>
+
+    <main>
+      <div class="main--container">
+        <div class="left--part">
+          <div class="bill--amount">
+            <div class="bill--number--label">
+              <h2>Bill</h2>
+              <span class="error--message--bill hidden">Can't be a zero</span>
+            </div>
+
+            <div class="input--box">
+              <input
+                type="text"
+                placeholder="0"
+                class="form--input form--input--bill"
+              />
+            </div>
+          </div>
+          <div class="tip--amount--percentage">
+            <div class="tip--amount--label">
+              <h2>Select Tip %</h2>
+              <span class="error--message--perc hidden">No Tip Selected!</span>
+            </div>
+
+            <div class="percentages">
+              <button class="btn btn--tip--amount">5%</button>
+              <button class="btn btn--tip--amount">10%</button>
+              <button class="btn btn--tip--amount">15%</button>
+              <button class="btn btn--tip--amount">25%</button>
+              <button class="btn btn--tip--amount">50%</button>
+              <input
+                type="text"
+                placeholder="Custom"
+                maxlength="2"
+                class="form--input input__tip--amount"
+              />
+            </div>
+          </div>
+          <div class="people--amount">
+            <div class="number--people--label">
+              <h2>Number of People</h2>
+              <span class="error--message--people hidden">Can't be a zero</span>
+            </div>
+
+            <div class="input--box">
+              <input
+                type="text"
+                placeholder="0"
+                class="form--input input__people--amount"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="right--part">
+          <div class="amount--person">
+            <div class="tip--amount--person">
+              <h2>Tip Amount</h2>
+              <p>/ person</p>
+            </div>
+            <p class="tip--amount">$0.00</p>
+          </div>
+          <div class="amount--person">
+            <div class="total--tip--amount">
+              <h2>Total</h2>
+              <p>/ person</p>
+            </div>
+
+            <div class="total--amount">$0.00</div>
+          </div>
+          <button class="btn btn--reset">Reset</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">Coded by ValentinvYang</div>
+    <script src="script.js"></script>
+  </body>
+</html>
